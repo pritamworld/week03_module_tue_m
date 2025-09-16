@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     console.log(req.method); // GET, POST, PUT, DELETE
     console.log(req.url);
     //console.log(res)
-    if(req.method !== 'GET') {
+    if(req.method === 'GET') {
         if(req.url === '/') { http://localhost:3000/
             res.statusCode = 200; // OK
             res.setHeader('Content-Type', 'text/html');
